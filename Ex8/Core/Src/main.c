@@ -271,7 +271,7 @@ int main(void)
 		  }
 		  update7SEG(index_led++);
 		  //if reach the last 7seg led, reset the next time
-		  if(index_led>3){
+		  if(index_led>=MAX_LED){
 			  index_led=0;
 		  }
 	  }
