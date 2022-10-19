@@ -364,7 +364,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef*htim){
 	if(counter_LED<=0){
 		update7SEG(index_led++);
 		//if reach the last 7seg led, reset the next time
-		if(index_led>3){
+		if(index_led>=MAX_LED){
 			index_led=0;
 		}
 
